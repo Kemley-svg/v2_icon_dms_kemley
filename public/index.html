@@ -14,23 +14,110 @@
     </style>
 
 </head>
-
+</script>
 <body>
     <div class="row">
-        <div class="image-container"><img src="img/cir.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="broom_id" src="img/broom.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="burger_id" src="img/burger.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="profile_id" src="img/profile.png" height="200" width="200"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="weight_id" src="img/weight.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="plush" src="img/plush.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="spa" src="img/spa.png" height="200" width="200"/></div>
         </div>
 
     <div class="row">
-        <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="mail_id" src="img/mail.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="scissors_id" src="img/scissors.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="chat_id"  src="img/chat.png" height="200" width="200"/></div>
     </div>
-</body>
+</body> 
+<script>
+const broom = document.getElementById ('broom_id')
+const broom_audio = new Audio ('audio/clack.mp3')
+broom.onpointerdown = () => {
+    broom_audio.play ()
+    broom.src = 'img/plush.png'
+    setTimeout (() => { 
+        broom.src = 'img/broom.png'
+    }, 1000)
+}
+const alarm = document.getElementById ('burger_id')
+const alarm_audio = new Audio ('audio/alarm.mp3')
+alarm.onpointerdown = () => {
+    alarm_audio.play ()
+    alarm.src = 'img/weight.png'
+    setTimeout (() => { 
+        alarm.src = 'img/burger.png'
+    }, 1000)
+}
+const boing = document.getElementById ('profile_id')
+const boing_audio = new Audio ('audio/boing.mp3')
+boing.onpointerdown = () => {
+    boing_audio.play ()
+    boing.src = 'img/spa.png'
+    setTimeout (() => { 
+        boing.src = 'img/profile.png'
+    }, 1000)
+}
+const glass = document.getElementById ('weight_id')
+const glass_audio = new Audio ('audio/glass.mp3')
+glass.onpointerdown = () => {
+    glass_audio.play ()
+    glass.src = 'img/burger.png'
+    setTimeout (() => { 
+        glass.src = 'img/weight.png'
+    }, 1000)
+}
+const paper = document.getElementById ('plush_id')
+const paper_audio = new Audio ('audio/paper.mp3')
+paper.onpointerdown = () => {
+    paper_audio.play ()
+    paper.src = 'img/broom.png'
+    setTimeout (() => { 
+        paper.src = 'img/plush.png'
+    }, 1000)
+}
+const tac = document.getElementById ('spa_id')
+const tac_audio = new Audio ('audio/tac.mp3')
+tac.onpointerdown = () => {
+    tac_audio.play ()
+    tac.src = 'img/profile.png'
+    setTimeout (() => { 
+        tac.src = 'img/spa.png'
+    }, 1000)
+}
+const walking = document.getElementById ('mail_id')
+const walking_audio = new Audio ('audio/walking.mp3')
+walking.onpointerdown = () => {
+    walking_audio.play ()
+    walking.src = 'img/scissors.png'
+    setTimeout (() => { 
+        walking.src = 'img/mail.png'
+    }, 1000)
+}
+const water = document.getElementById ('scissors_id')
+const water_audio = new Audio ('audio/water.mp3')
+water.onpointerdown = () => {
+    water_audio.play ()
+    water.src = 'img/burger.png'
+    setTimeout (() => { 
+        water.src = 'img/scissors.png'
+    }, 1000)
+}
+const fall = document.getElementById ('chat_id')
+const fall_audio = new Audio ('audio/fall.mp3')
+fall.onpointerdown = () => {
+    fall_audio.play ()
+    fall.src = 'img/plush.png'
+    setTimeout (() => { 
+        fall.src = 'img/chat.png'
+    }, 1000)
+}
+
+
+
+
+</script>
